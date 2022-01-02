@@ -1,0 +1,7 @@
+SELECT key,
+    CASE WHEN x > y AND x > z
+        THEN x
+    CASE WHEN y > z AND y > x
+        THEN y
+    ELSE z AS greatest
+FROM Greatests gr;
