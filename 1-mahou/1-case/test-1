@@ -3,5 +3,5 @@ SELECT key,
         THEN x
     CASE WHEN y > z AND y > x
         THEN y
-    ELSE z AS greatest
+    ELSE z END AS greatest
 FROM Greatests gr;
